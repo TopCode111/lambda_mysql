@@ -3,11 +3,11 @@ import boto3
 import pymysql
 
 #def lambda_handler():
-c4dbjlksawrr
+def lambda_handler(event, context):
 	rds_host  = "database-1.c4dbjlksawrr.eu-west-2.rds.amazonaws.com"
 	name = 'admin'
-	password = 'hackjarhackjar'
-	db_name = 'db_eb'
+	password = '#####'
+	db_name = '####'
 	try:
 		conn = pymysql.connect(rds_host, user=name, passwd=password, db=db_name, connect_timeout=5)
 		print('connected')
